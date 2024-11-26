@@ -97,7 +97,7 @@ body {
 }
 
 /* product-section */
-.product h3 {
+.product > h3 {
   margin-left: 1rem;
 }
 .product_container {
