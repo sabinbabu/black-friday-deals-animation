@@ -95,3 +95,46 @@ body {
   word-spacing: 2rem;
   font-size: x-large;
 }
+
+/* product-section */
+.product h3 {
+  margin-left: 1rem;
+}
+.product_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: start;
+  background-color: aquamarine;
+  padding: 1rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 2rem 0;
+  box-shadow: 2px 2px 5px black;
+}
+
+.product-card .card-body {
+  padding: 1rem;
+}
+
+.card-body button {
+  border: none;
+  padding: 1rem 2rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+.img-container {
+  height: 15rem;
+  width: 25rem;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 2rem 0;
+  backdrop-filter: blur(5px);
+}
