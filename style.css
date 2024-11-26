@@ -1,14 +1,14 @@
 body {
   margin: 0;
   display: grid;
-  grid-row: auto auto 1fr 50rem auto;
+  grid-template-rows: 4rem auto 1fr auto auto;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "header"
     "marquee"
     "hero"
     "product"
     "footer";
-  overflow-x: hidden;
 }
 
 .flex-container {
@@ -31,6 +31,7 @@ body {
   grid-area: marquee;
   background-color: red;
   color: white;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -52,6 +53,10 @@ body {
 .nav_menu {
   list-style: none;
   gap: 2rem;
+
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 
 /* marquee-section */
@@ -87,15 +92,9 @@ body {
 
 .hero_container p {
   background-color: wheat;
-  line-height: 10rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-
-  padding: 0 5rem;
-  border-radius: 2rem;
-  word-spacing: 2rem;
+  padding: 3rem 5rem;
   font-size: x-large;
+  border-radius: 2rem;
 }
 
 /* product-section */
@@ -104,9 +103,10 @@ body {
 }
 .product_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: auto;
   gap: 3rem;
-  justify-items: start;
+  justify-items: center;
   background-color: aquamarine;
   padding: 1rem;
 }
