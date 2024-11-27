@@ -8,29 +8,33 @@
   </head>
   <body>
     <!-- header-section -->
-    <header class="header flex-container">
-      <div class="logo">LOGO</div>
+    <header class="header flex-container" id="home">
+      <div class="logo">FRIDAY DEALS</div>
       <ul class="nav_menu flex-container">
-        <li>Home</li>
-        <li>Products</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
     </header>
     <!-- marquee-section -->
     <div class="marquee">
       <div class="marquee-container flex-container">
-        <p>Marquee</p>
-        <p>Sale</p>
+        <p>Up to 30% off everything</p>
+        <p>| Return within 30 days - no questions asked!</p>
+        <p>| Shipping $9 - Free over $79</p>
       </div>
     </div>
     <!-- hero-section -->
     <section class="hero">
       <div class="hero_container flex-container">
-        <p>SALE SALE HERO</p>
+        <p>
+          Up to 30% off <br />
+          On everything
+        </p>
       </div>
     </section>
     <!-- product-section -->
-    <section class="product">
+    <section class="product" id="product">
       <h3>Products</h3>
       <div class="product_container">
         <div class="product-card">
@@ -46,11 +50,14 @@
               alt="image of cricket bat"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>Premium Quality Bat</h3>
-            <p>AUD 100</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$100</p>
+              <p class="actual-price">$250</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -66,11 +73,14 @@
               alt="image of high quality pads"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container flex-container">
             <h3>Batting Cricket Pads</h3>
-            <p>AUD 75</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$75</p>
+              <p class="actual-price">$250</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -86,11 +96,14 @@
               alt="cricket ball"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>Kookaburra Cricket Ball(5pc)</h3>
-            <p>AUD 250</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$250</p>
+              <p class="actual-price">$550</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -106,11 +119,14 @@
               alt="wooden-stumps"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>Hart Wooden Cricket Stumps</h3>
-            <p>AUD 65</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$65</p>
+              <p class="actual-price">$170</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -126,11 +142,14 @@
               alt="batting-gloves"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>Hitech Batting Gloves</h3>
-            <p>AUD 125</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$125</p>
+              <p class="actual-price">$300</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -146,11 +165,14 @@
               alt="cricket helmet"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>Best Cricket Helmet</h3>
-            <p>AUD 400</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$400</p>
+              <p class="actual-price">$700</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -166,11 +188,14 @@
               alt="Spike Cricket Shoes"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>Spike Cricket Shoes</h3>
-            <p>AUD 165</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$165</p>
+              <p class="actual-price">$445</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
 
         <div class="product-card">
@@ -186,16 +211,19 @@
               alt="wooden-stumps"
             />
           </div>
-          <div class="card-body">
+          <div class="card-body flex-container">
             <h3>New Balance Bag</h3>
-            <p>AUD 220</p>
-            <button>Add to cart</button>
+            <div class="price">
+              <p class="deal-price">$220</p>
+              <p class="actual-price">$500</p>
+            </div>
           </div>
+          <button class="btn">Add to cart</button>
         </div>
       </div>
     </section>
     <!-- footer-section -->
-    <footer class="footer flex-container">
+    <footer class="footer flex-container" id="footer">
       <div>&copy;</div>
       <p>Binwin Studios 2024</p>
     </footer>
