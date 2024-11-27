@@ -157,6 +157,19 @@ a {
   justify-items: center;
   background-color: red;
   padding: 1rem;
+  animation: color-change 10s infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+  }
+  50% {
+    background: linear-gradient(90deg, #43e97b, #38f9d7);
+  }
+  100% {
+    background: linear-gradient(90deg, #fa709a, #fee140);
+  }
 }
 
 .product-card {
