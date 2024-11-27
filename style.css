@@ -59,6 +59,36 @@ body {
   }
 }
 
+.nav_menu li:hover {
+  animation: skyfall 1s 1 linear;
+  cursor: pointer;
+}
+
+@keyframes skyfall {
+  0% {
+    transform: rotate(0deg) translate(0%) scale(2);
+  }
+  75% {
+    transform: rotate(270deg) translate(500%) scale(0.5);
+  }
+  100% {
+    transform: rotate(0deg) translate(0%) scale(2);
+  }
+}
+
+.logo {
+  animation: logo 1s infinite ease-in-out;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg) translate(0%);
+  }
+  100% {
+    transform: rotate(45deg) translate(100%);
+  }
+}
+
 /* marquee-section */
 .marquee-container {
   justify-content: flex-start;
@@ -95,6 +125,16 @@ body {
   padding: 3rem 5rem;
   font-size: x-large;
   border-radius: 2rem;
+  animation: scaleup 1s infinite linear;
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(7);
+  }
 }
 
 /* product-section */
@@ -117,6 +157,31 @@ body {
   box-shadow: 2px 2px 5px black;
 }
 
+.product-card:hover {
+  cursor: pointer;
+  animation: rotate 0.2s 5 linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .product-card .card-body {
   padding: 1rem;
 }
@@ -126,6 +191,17 @@ body {
   padding: 1rem 2rem;
   font-size: large;
   font-weight: bold;
+  animation: shake 0.7s infinite linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0%);
+  }
+
+  100% {
+    transform: translate(100%) scale(0.5);
+  }
 }
 
 .img-container {
@@ -139,4 +215,21 @@ body {
   object-fit: contain;
   border-radius: 2rem 0;
   backdrop-filter: blur(5px);
+}
+
+/* footer-section */
+.footer div {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(4);
+  }
 }
